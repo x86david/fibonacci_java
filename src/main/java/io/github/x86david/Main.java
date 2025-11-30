@@ -1,3 +1,4 @@
+import static java.lang.IO.print;
 import static java.lang.IO.println;
 
 void main(String[] args) {
@@ -37,6 +38,8 @@ void main(String[] args) {
 
     println("Sequence length: " + sequenceLength);
     for (int i = 0; i < sequenceLength; i++) {
-        println(fibonacciSequence.get(i));
+        print(fibonacciSequence.get(i));
+        if(i!=fibonacciSequence.size()-1)print(", ");
     }
+    println();
 }
